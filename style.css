@@ -139,7 +139,7 @@ section .title::after{
     background: #fff;
     transform:translateX(-50%);
 }
-.about, .skills .projects .contact{
+.about, .skills, .projects, .contact{
     font-family: 'Poppins' , sans-serif;
 }
 section .title{
@@ -244,6 +244,7 @@ section .title::after{
 }
 
 .projects .title::after{
+    content: "what i created";
     background:#111;
     
 }
@@ -288,7 +289,7 @@ section .title::after{
 
 }
 .projects .projects-content .card:hover .box{
-    transform: scale(1.05)
+    transform: scale(1.05);
 }
 
 .projects .projects-content .card i{
@@ -523,6 +524,11 @@ html {
         flex:100%;
 
     }
+    .projects .projects-content .card{
+        width: calc(50%-10px);
+        margin-bottom: 20px;
+
+    }
 
 }
 
@@ -542,6 +548,11 @@ html {
         font-size:20px;
        
     }
+    .projects .projects-content .card{
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
 
 
 }
@@ -555,6 +566,8 @@ html {
         font-size: 27px;
       
     }
+
+   
 
 }
 
